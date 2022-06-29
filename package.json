@@ -1,0 +1,33 @@
+{
+  "name": "@xpcn/mariadb-query",
+  "version": "1.0.0",
+  "description": "a mariadb query format.",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "ts-node --experimental-specifier-resolution=node test",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpcn2015/mariadb-query.git"
+  },
+  "author": "xpcn2015",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpcn2015/mariadb-query/issues"
+  },
+  "homepage": "https://github.com/xpcn2015/mariadb-query#readme",
+  "dependencies": {
+    "@xpcn/logger": "^1.0.6",
+    "mariadb": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
+}
