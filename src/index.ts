@@ -6,7 +6,7 @@ import Transport from 'winston-transport';
 // Inherit from `winston-transport` so you can take advantage
 // of the base functionality and `.exceptions.handle()`.
 //
-class mariadbTransport extends Transport {
+export class mariadbTransport extends Transport {
 
 
     log(info: { level: string; message: string; from: string; }, callback: () => void) {
